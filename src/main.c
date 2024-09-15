@@ -5,12 +5,11 @@
  * Note: The returned array must be malloced, assume caller calls free().
  */
 
-struct Node {
+typedef struct Node {
   int key;
   int value;
   struct Node *next;
-};
-typedef struct Node Node;
+} Node;
 
 typedef struct {
   Node **arr;
